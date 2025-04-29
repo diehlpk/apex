@@ -24,7 +24,7 @@ find_path(NVML_INCLUDE_DIR NAMES nvml.h
 	HINTS ${CUDAToolkit_INCLUDE_DIRS} ${NVML_ROOT}/include ${NVML_ARCH_ROOT}/include)
 
 find_library(NVML_LIBRARY NAMES nvml nvidia-ml
-	HINTS ${CUDAToolkit_LIBRARY_DIR} ${NVML_ROOT} ${NVML_ROOT}/lib64 ${NVML_ROOT}/lib ${NVML_ARCH_ROOT} ${NVML_ARCH_ROOT}/lib64 ${NVML_ARCH_ROOT}/lib ${NVML_ROOT}/lib64/stubs ${NVML_ROOT}/lib/stubs)
+	HINTS /projects/darwin-nv/rhel9/aarch64/packages/cuda/12.4.1/targets/sbsa-linux/lib/stubs/ ${CUDAToolkit_LIBRARY_DIR} ${NVML_ROOT} ${NVML_ROOT}/lib64 ${NVML_ROOT}/lib ${NVML_ARCH_ROOT} ${NVML_ARCH_ROOT}/lib64 ${NVML_ARCH_ROOT}/lib ${NVML_ROOT}/lib64/stubs ${NVML_ROOT}/lib/stubs)
 
 find_library(CUDA_LIBRARY NAMES cudart
     HINTS ${CUDAToolkit_LIBRARY_DIR})
