@@ -12,8 +12,9 @@ if(NOT DEFINED $NVML_ROOT)
 	endif()
 endif()
 
+message(STATUS "Variable_Name: ${NVML_ROOT}")
 set(NVML_ARCH_ROOT ${NVML_ROOT}/targets/sbsa-linux)
-
+message(STATUS "Variable_Name: ${NVML_ROOT}")
 #if(NOT DEFINED $NVML_ROOT AND CUDAToolkit_FOUND)
 #    message(INFO "   env NVML_ROOT is assuming ${CUDAToolkit_INCLUDE_DIRS}/..")
 #    set(NVML_ROOT "${CUDAToolkit_INCLUDE_DIRS}/../extras/NVML")
