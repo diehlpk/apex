@@ -12,7 +12,7 @@ if(NOT DEFINED $NVML_ROOT)
 	endif()
 endif()
 
-set(NVML_ARCH_ROOT ${NVML_ROOT}/targets/x86_64-linux)
+set(NVML_ARCH_ROOT ${NVML_ROOT}/targets/sbsa-linux)
 
 #if(NOT DEFINED $NVML_ROOT AND CUDAToolkit_FOUND)
 #    message(INFO "   env NVML_ROOT is assuming ${CUDAToolkit_INCLUDE_DIRS}/..")
